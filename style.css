@@ -1,0 +1,152 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#ceaeff5f,#21000035);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    margin-bottom: 150px;
+}
+header {
+    overflow: hidden;
+    background: linear-gradient(45deg,#6600ff,#210000);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4%;
+}
+
+header img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.menu a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+.menu a:hover{
+    transition: 1s ease-in-out;
+    color: #ff1900;
+    border: #210000;
+    border-radius: 35px;
+    mix-blend-mode: color-dodge;
+}
+
+.content {
+    /* margin: 20px; */
+    width:100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+
+.content .card:hover{
+    animation: Card 8s ease-in-out infinite alternate;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    transition: 1s ease;
+    border-radius: 25px;
+    border: #6600ff;
+    border-style: solid;
+    border-width: 2px;
+    background: linear-gradient(45deg,#6600ff4c,#2100003e);
+}
+.row{
+    justify-content: space-evenly;
+}
+
+.card {
+    gap: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transform: scale(0.8);
+}
+
+.card img{
+    width: 100%;
+
+
+}
+.card img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
+center h4 a{
+    text-decoration: none;
+    color: black;
+}
+.container {
+    padding: 2px 16px;
+}
+
+.container p{
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(45deg,#6600ff,#210000);
+    text-decoration: white;
+    padding: 10px;
+    margin: 0;
+    transform: translateY(240px);
+}
+.footer_container{
+    color: white;
+}
+.footer_container a{
+    color: white;
+    text-decoration: none;
+}
+.inst .insimage img{
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 300px;
+}
+ .inst .text p{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+ }
+h1{
+    color:rgb(131, 6, 131);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    background-image: linear-gradient(to bottom right, rgb(232, 20, 20), rgb(255, 255, 255));
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.inst form{
+   
+}
+
+@keyframes Card{
+    0%{
+        transform: translateY(-15px) perspective(100px);
+    }
+    50%{
+        transform: translateY(15px) perspective(200px) ;
+    }
+    100%{
+        transform: translateY(0px) perspective(0px);
+    }
+} 
+    
